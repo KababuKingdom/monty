@@ -1,6 +1,6 @@
 #include "monty.h"
 /**
-  * break_line - brak up the line read.
+  * break_line - break up the line read.
   * @line: line read.
   *
   * Return: array of strings .
