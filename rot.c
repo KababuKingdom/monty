@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
-  * rotl - rotates the stack to the top.
+  * rotr - rotates the stack to the bottom.
   * @stack: double pointer to stack.
   * @line_number: number of lins.
   *
   * Return: void.
   */
-void rotl(stack_t **stack, unsigned int line_number)
+void rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *last;
 
@@ -26,13 +26,13 @@ void rotl(stack_t **stack, unsigned int line_number)
 }
 
 /**
-  * rotr - rotates the stack to the bottom.
+  * rotl - rotates the stack to Top.
   * @stack: double pointer to stack.
   * @line_number: number of lines.
   *
   * Return: void.
   */
-void rotr(stack_t **stack, unsigned int line_number)
+void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *b_last, *last;
 
