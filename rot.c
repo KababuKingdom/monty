@@ -7,7 +7,7 @@
   *
   * Return: void.
   */
-void rotr(stack_t **stack, unsigned int line_number)
+void rotr(stack_t **stack, __attribute__((unused) unsigned int line_number)
 {
 	stack_t *last = *stack;
 
@@ -34,7 +34,7 @@ void rotr(stack_t **stack, unsigned int line_number)
   * rotl never fails.
   * Return: void.
   */
-void rotl(stack_t **stack, unsigned int line_number)
+void rotl(stack_t **stack, __attribute__((unused) unsigned int line_number)
 {
 	stack_t *last = *stack, *b_last;
 
