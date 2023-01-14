@@ -1,0 +1,35 @@
+#include "monty.h"
+
+/**
+ * stack - sets the data structure to a stack (LIFO)
+ * @stack: pointer to the top of the stack
+ * @line_number: the line number in the file
+ *
+ * Return: void
+ */
+void stack(stack_t **stack, unsigned int line_number)
+{
+    (void)stack;
+    (void)line_number;
+    /* set global variable to indicate stack mode */
+    argument = 0;
+}
+
+/**
+ * queue - sets the data structure to a queue (FIFO)
+ * @stack: pointer to the top of the stack
+ * @line_number: the line number in the file
+ *
+ * Return: void
+ */
+void queue(stack_t **stack, unsigned int line_number)
+{
+    stack_t *head = *stack;
+    stack_t *temp;
+    (void)line_number;
+
+    /* if stack is empty or contains only one node, do nothing */
+    if (head == NULL || head->next == NULL)
+    {
+        argument = 1;
+	return;
