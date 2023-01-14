@@ -7,16 +7,19 @@
   *
   * Return: void.
   */
-void rotr(stack_t **stack, __attribute__((unused) unsigned int line_number)
+void rotr(stack_t **stack, unsigned int line_number)
 {
 	stack_t *last = *stack;
 
 	(void)line_number;
 	if (*stack == NULL || (*stack)->next == NULL)
-		return;
-
+	  {
+	    return;
+	  }
        	while (last->next != NULL) /* to get to the last element of the list */
-		last = last->next;
+	  {
+                  last = last->next;
+	  }
 	last->next = *stack;
 	(*stack)->prev = last;
 	(*stack) = last;
@@ -34,7 +37,7 @@ void rotr(stack_t **stack, __attribute__((unused) unsigned int line_number)
   * rotl never fails.
   * Return: void.
   */
-void rotl(stack_t **stack, __attribute__((unused) unsigned int line_number)
+void rotl(stack_t **stack, unsigned int line_number)
 {
 	stack_t *last = *stack, *b_last;
 
